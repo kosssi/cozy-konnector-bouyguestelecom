@@ -3,9 +3,9 @@
 const qs = require('querystring')
 const moment = require('moment')
 
-const {log, BaseKonnector, saveBills, request} = require('cozy-konnector-libs')
+const {log, BaseKonnector, saveBills, requestFactory} = require('cozy-konnector-libs')
 
-let rq = request({
+let rq = requestFactory({
   cheerio: true,
   json: false,
   jar: true,
